@@ -17,8 +17,9 @@ const cy = cytoscape({
     ]
 })
 
-
-cy.add([
-    { data: { id: "c" } },
-])
 cy.fit(undefined, 20)
+
+import { ba } from "./ba.ts"
+
+for (let i=0; i<10; i++)
+    ba(cy)
