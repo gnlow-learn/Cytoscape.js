@@ -16,3 +16,9 @@ const cy = cytoscape({
         } },
     ]
 })
+
+
+cy.add([
+    { data: { id: "c" } },
+])
+cy.fit(undefined, 20)
